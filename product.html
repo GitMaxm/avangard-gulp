@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+
+                <div class="header-top">
+
+
+
+    <nav class="header-nav">
+        <a class="header-link--back" href="index.html">
+            <img src="./img/icons/back.svg" alt="Кнопка 'Назад' для возвращения на главную стрицу">
+            Назад</a>
+    </nav>
+
+    <div class="header-messenger">
+        <p>Получите консультацию <br>онлайн</p>
+
+        <a target="_blank" href="https://wtsp.cc/79282279959">
+            <img loading="lazy" src="./img/icons/whatsapp.svg" alt="">
+        </a>
+
+    </div>
+
+    <div class="phone">
+        <div class="phone__label">Работаем все дни с 9:00-18:00</div>
+        <a class="phone__tel" href="tel:+79282279959">+7 (928) 227-99-59</a>
+    </div>
+
+    <a class="callback__link button header-callback" data-fancybox href="#hidden">Заказать</a>
+
+    <div style="display: none;" id="hidden">
+        <div class="form-intro">
+            <h2 class="form-title">Заказать звонок</h2>
+            <p class="form-description">
+                Заполните форму ниже, и мы свяжемся с вами как можно скорее.
+            </p>
+        </div>
+
+        <form class="form-order" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+            <div class="form-group-container">
+                <div class="form-group">
+                    <label for="name" class="form-label">Введите ваше имя
+                        <span class="required">*</span>
+                    </label>
+                    <input id="name" name="name" class="form-input" placeholder="Алексей" type="text" required />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email
+                        <span class="required">*</span>
+                    </label>
+                    <input id="email" name="email" class="form-input" placeholder="email@mail.ru" type="email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Телефон
+                        <span class="required">*</span>
+                    </label>
+                    <input id="phone" name="phone" class="form-input" placeholder="+7 (999) 216 153 99" type="text"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-textarea" id="message" name="message"
+                        placeholder="Напишите нам сообщение, если есть что добавить"></textarea>
+                </div>
+
+                <label class="checkbox">
+                    <input name="policy" required type="checkbox" class="checkbox__real" id="policy" />
+                    <div class="checkbox__text">
+                        С <a href="https://google.com" target="_blank">политикой конфеденциальности</a> ознакомлен
+                    </div>
+                </label>
+
+            </div>
+
+            <button id="submitForm" class="form-submit" type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+                <div class="header-bot">
+    <div class="logo">
+        <img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Артекс">
+        <div>
+            <h2>Авангард</h2>
+            <p class="logo-label">
+                Всё начинается с упаковки
+            </p>
+        </div>
+    </div>
+
+    <!-- <form class="header-search">
+
+        <input class="header-search__input" type="text" placeholder="Поиск по товарам">
+
+        <button class="button header-search__btn" disabled="">
+            Найти
+        </button>
+
+    </form> -->
+
+
+
+</div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="container">
+                <div class="product__wrapper">
+
+                    <div class="product-img">
+                        <img loading="lazy" src="./img/products/01.jpg" alt="">
+                    </div>
+
+                    <div class="product-content">
+                        <h1>Название продукта</h1>
+                        <p>Описание продукта Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt
+                            molestias fugit ad! Accusamus, nostrum eius, ipsam, harum amet similique labore quos cumque
+                            iure facilis ex animi. Soluta, suscipit pariatur!</p>
+                    </div>
+                </div>
+
+                <div class="product-list">
+                    <ul></ul>
+                    <ul></ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+	<div class="container">
+		<div class="footer__wrappper">
+			<img loading="lazy" class="footer-logo" src="./img/logo-day.png" alt="">
+			<p>© 2024. Артекс. Все права защищены</p>
+		</div>
+	</div>
+</footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a58693e5-1e8e-4308-8b3c-45bf0e2e603e&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <script src="./js/index.bundle.js"></script>
+
+</body>
+
+</html>
