@@ -34,7 +34,7 @@
     </div>
 
     <div class="phone">
-        <div class="phone__label">Работаем все дни с 9:00-18:00</div>
+        <div class="phone__label">Работаем все дни с 8:00-17:00</div>
         <a class="phone__tel" href="tel:+79282279959">+7 (928) 227-99-59</a>
     </div>
 
@@ -125,49 +125,151 @@
     <main>
         <section class="product">
             <div class="container">
+
                 <div class="product__wrapper">
-
-                    <div class="product-img">
-                        <img loading="lazy" src="./img/catalog/pnd-bottle/main.jpg" alt="">
-                    </div>
-
                     <div class="product-content">
-                        <h1>ПНД-бутылка</h1>
-                        <p>Бутылка из полиэтилена низкой плотности (ПНД) представляет собой надежное и практичное
-                            устройство для хранения и транспортировки различных жидкостей. Ее основными преимуществами
-                            являются высокая прочность, устойчивость к ударам, низкая стоимость и долговечность.
-                            Внешний вид бутылки ПНД органично сочетается с ее функциональностью. Гладкие и элегантные
-                            линии создают впечатление компактности и эффективности.</p>
 
-                        <p>Однако, под своей простой и строгой внешностью скрывается множество возможностей
-                            использования. Бутылка ПНД идеально подходит для хранения масел, моющих средств и многих
-                            других жидкостей. Материал бутылки защищает содержимое от воздействия внешней среды,
-                            сохраняя его свежим и непорочным.</p>
+                        <div class="product-img">
+                            <img loading="lazy" src="./img/catalog/other/stretch-01.jpg" alt="">
+                        </div>
 
-                        <p>Безопасность и экологическая дружественность также стали ключевыми аспектами разработки
-                            бутылки ПНД. Материал не содержит токсических веществ и не выделяет вредных паров, что
-                            делает ее полностью безопасной для использования. Кроме того, возможность повторного
-                            использования и переработки делает бутылку ПНД эко-дружественным выбором, способствующим
-                            уменьшению негативного воздействия на окружающую среду.</p>
+
+
+                        <div class="product-description">
+                            <h1>Прочие товары</h1>
+
+                            <div class="product-section">
+                                <h2>Комплектующие товары</h2>
+                                <ul>
+                                    <li><strong>Ручки</strong> – различные виды для упаковки и промышленного применения
+                                    </li>
+                                    <li><strong>Пробки</strong> – герметичные и стандартные варианты</li>
+                                    <li><strong>Крышки</strong> – пластиковые, резиновые, под разные типы тары</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-section">
+                                <h2>Скотч</h2>
+                                <ul>
+                                    <li><strong>Толщина:</strong> 0,4 мм – оптимальная прочность для упаковки</li>
+                                    <li><strong>Ширина:</strong> 48 мм – стандартный размер для большинства задач</li>
+                                    <li><strong>Длина:</strong> 120 м – увеличенный метраж для долгого использования
+                                    </li>
+                                    <li><strong>Особенности:</strong> прозрачный, влагостойкий, с хорошей адгезией</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-section">
+                                <h2>Стретч-пленка</h2>
+                                <ul>
+                                    <li><strong>Толщина:</strong> от 17 до 50 мкм – выбор в зависимости от нагрузки</li>
+                                    <li><strong>Форматы:</strong>
+                                        <ul>
+                                            <li><strong>100 мм</strong> – для легких грузов и ручной упаковки</li>
+                                            <li><strong>250 мм</strong> – универсальный вариант</li>
+                                            <li><strong>500 мм</strong> – для паллет и крупногабаритных грузов</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Характеристики:</strong> высокая эластичность, устойчивость к разрывам,
+                                        прозрачность для маркировки</li>
+                                </ul>
+                            </div>
+
+                            <p class="note">Все товары доступны под заказ. Возможны индивидуальные параметры (ширина,
+                                длина).</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="product-list">
-                    <ul></ul>
-                    <ul></ul>
+                    <div class="product__wrapper-line"></div>
+
+
+                    <ul class="product-list" id="productList">
+                        <!-- Здесь будет динамически созданный список товаров -->
+                    </ul>
+
+                    <script>
+                        const catalogData = {
+                            "catalog": [
+                                {
+                                    "id": "item-4",
+                                    "link": "other.html",
+                                    "items": [
+                                        {
+                                            "img": "other/lids.jpg",
+                                            "title": "Комплектующие товары",
+                                            "description": "Ручки, пробки, крышки для тары"
+                                        },
+                                        {
+                                            "img": "other/scotch.jpg",
+                                            "title": "Упаковочный скотч",
+                                            "description": "Размер: 48мм × 120м, толщина 40мкм"
+                                        },
+                                        {
+                                            "img": "other/stretch-01.jpg",
+                                            "title": "Стретч-пленка",
+                                            "description": "Ширина: 100мм, 250мм, 500мм"
+                                        },
+                                        {
+                                            "img": "other/stretch-02.jpg",
+                                            "title": "Стретч-пленка",
+                                            "description": "Ширина: 100мм, 250мм, 500мм"
+                                        },
+                                        {
+                                            "img": "other/stretch-03.jpg",
+                                            "title": "Стретч-пленка",
+                                            "description": "Ширина: 100мм, 250мм, 500мм"
+                                        }
+                                    ]
+                                }
+                            ]
+                        };
+
+                        function createProductListMarkup() {
+                            const productList = document.getElementById('productList');
+                            const items = catalogData.catalog[0].items; // Доступ напрямую к items первой (и единственной) категории
+
+                            productList.innerHTML = ''; // Очистка списка перед добавлением новых элементов
+
+                            items.forEach(product => {
+                                const productItem = document.createElement('li');
+                                productItem.className = 'product-list__item';
+
+                                productItem.innerHTML = `
+                                    <div class="product-list__img">
+                                        <img loading="lazy" src="./img/catalog/${product.img}" alt="${product.description}">
+                                    </div>
+                                    <div class="product-list__content">
+                                        <h4>${product.title}</h4>
+                                        <p>${product.description}</p>
+                                    </div>
+                                `;
+
+                                productList.appendChild(productItem);
+                            });
+                        }
+
+                        // Пример использования: создаем разметку для первой (и единственной) категории в catalogData
+                        createProductListMarkup();
+                    </script>
                 </div>
             </div>
         </section>
-
-
 
     </main>
 
     <footer class="footer">
 	<div class="container">
 		<div class="footer__wrappper">
-			<img loading="lazy" class="footer-logo" src="./img/logo-day.png" alt="">
-			<p>© 2024. Артекс. Все права защищены</p>
+			<div class="logo">
+				<img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Артекс">
+				<div>
+					<h2>Авангард</h2>
+					<p class="logo-label">
+						Всё начинается с упаковки
+					</p>
+				</div>
+			</div>
+			<p>© 2025. Артекс. Все права защищены</p>
 		</div>
 	</div>
 </footer>

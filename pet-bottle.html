@@ -34,7 +34,7 @@
     </div>
 
     <div class="phone">
-        <div class="phone__label">Работаем все дни с 9:00-18:00</div>
+        <div class="phone__label">Работаем все дни с 8:00-17:00</div>
         <a class="phone__tel" href="tel:+79282279959">+7 (928) 227-99-59</a>
     </div>
 
@@ -133,91 +133,49 @@
                             <img loading="lazy" src="./img/catalog/pet-bottle/main.jpg" alt="">
                         </div>
 
-                        <div class="product-content__descr">
-                            <h1>ПЭТ-бутылка</h1>
-                            <p>ПЭТ-бутылка, или полиэтилентерефталатная бутылка, является одной из наиболее
-                                распространенных
-                                и удобных упаковочных емкостей в современном мире. Она широко применяется в различных
-                                сферах
-                                деятельности, таких как пищевая промышленность, фармацевтика, косметология и многие
-                                другие.
-                            </p>
+                        <div class="product-description">
+                            <h1>ПЭТ-бутылки</h1>
 
-                            <p>Одним из главных преимуществ ПЭТ-бутылок является их легкость и прочность. В то время как
-                                стеклянные бутылки могут быть тяжелыми и хрупкими, ПЭТ-бутылки обладают высокой
-                                прочностью,
-                                что делает их идеальными для транспортировки и хранения различных продуктов. Кроме того,
-                                они
-                                легко перерабатываются и могут быть повторно использованы, что делает их более
-                                экологически
-                                дружелюбными.</p>
+                            <div class="product-section">
+                                <p>ПЭТ-бутылки - популярная пластиковая тара для напитков, косметики и бытовой химии.
+                                    Прочные, легкие и полностью перерабатываемые.</p>
+                            </div>
 
-                            <p>ПЭТ-бутылки также отличаются своей прозрачностью, что позволяет потребителям видеть
-                                содержимое упаковки без необходимости открывать ее. Это особенно важно для
-                                продовольственных
-                                товаров, так как покупатели могут убедиться в свежести и качестве продукта, не нарушая
-                                его
-                                целостность.</p>
+                            <div class="product-section">
+                                <h2>Основные преимущества:</h2>
+                                <ul>
+                                    <li>Высокая прочность и безопасность</li>
+                                    <li>Малый вес по сравнению со стеклом</li>
+                                    <li>Возможность создания любой формы и объема</li>
+                                    <li>Полная прозрачность для демонстрации продукта</li>
+                                    <li>Экологичность и возможность переработки</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-section">
+                                <h2>Сферы применения:</h2>
+                                <ul>
+                                    <li>Газированные и негазированные напитки</li>
+                                    <li>Пиво и слабоалкогольные продукты</li>
+                                    <li>Молочная продукция</li>
+                                    <li>Косметические средства</li>
+                                    <li>Бытовая химия</li>
+                                </ul>
+                            </div>
+
+                            <p class="note">Предлагаем ПЭТ-бутылки различных форм и объемов. Доступны индивидуальные
+                                решения под ваш продукт.</p>
                         </div>
                     </div>
 
                     <div class="product__wrapper-line"></div>
 
-                    <!-- <ul class="product-list">
-                        <li class="product-list__item">
-
-                            <div class="product-list__img">
-                                <img loading="lazy" src="./img/catalog/pet-bottle/01.jpg" alt="">
-                            </div>
-
-                            <div class="product-list__content">
-                                <h4>Бутылка</h4>
-                                <p>Объем: 0,5 литров</p>
-                            </div>
-                        </li>
-
-                        <li class="product-list__item">
-
-                            <div class="product-list__img">
-                                <img loading="lazy" src="./img/catalog/pet-bottle/02.jpg" alt="">
-                            </div>
-
-                            <div class="product-list__content">
-                                <h4>Бутылка</h4>
-                                <p>Объем: 0,5 литров</p>
-                            </div>
-                        </li>
-
-                        <li class="product-list__item">
-
-                            <div class="product-list__img">
-                                <img loading="lazy" src="./img/catalog/pet-bottle/03.jpg" alt="">
-                            </div>
-
-                            <div class="product-list__content">
-                                <h4>Бутылка</h4>
-                                <p>Объем: 5 литров</p>
-                            </div>
-                        </li>
-
-                        <li class="product-list__item">
-
-                            <div class="product-list__img">
-                                <img loading="lazy" src="./img/catalog/pet-bottle/04.jpg" alt="">
-                            </div>
-
-                            <div class="product-list__content">
-                                <h4>Бутылка</h4>
-                                <p>Объем: 5 литров</p>
-                            </div>
-                        </li>
-                    </ul> -->
 
                     <ul class="product-list" id="productList">
                         <!-- Здесь будет динамически созданный список товаров -->
                     </ul>
 
-                    <script type="module">
+                    <script>
                         const catalogData = {
                             "catalog": [
                                 {
@@ -225,32 +183,32 @@
                                     "link": "pet-bottle.html",
                                     "items": [
                                         {
-                                            "img": "./img/catalog/pet-bottle/01.jpg",
+                                            "img": "pet-bottle/01.jpg",
                                             "title": "Бутылка",
                                             "description": "Объем: 0,25 литров"
                                         },
                                         {
-                                            "img": "./img/catalog/pet-bottle/02.jpg",
+                                            "img": "pet-bottle/02.jpg",
                                             "title": "Бутылка",
                                             "description": "Объем: 0,5 литров"
                                         },
                                         {
-                                            "img": "./img/catalog/pet-bottle/03.jpg",
+                                            "img": "pet-bottle/03.jpg",
                                             "title": "Бутылка",
                                             "description": "Объем: 5 литров"
                                         },
                                         {
-                                            "img": "./img/catalog/pet-bottle/04.jpg",
+                                            "img": "pet-bottle/04.jpg",
                                             "title": "Бутылка",
                                             "description": "Объем: 5 литров"
                                         },
                                         {
-                                            "img": "./img/catalog/pet-bottle/05.jpg",
+                                            "img": "pet-bottle/05.jpg",
                                             "title": "Бутылка",
                                             "description": "Объем: 1,5 литров"
                                         },
                                         {
-                                            "img": "./img/catalog/pet-bottle/06.jpg",
+                                            "img": "pet-bottle/06.jpg",
                                             "title": "Бутылка",
                                             "description": "Объем: 1 литр"
                                         },
@@ -271,7 +229,7 @@
 
                                 productItem.innerHTML = `
                                     <div class="product-list__img">
-                                        <img loading="lazy" src="${product.img}" alt="${product.description}">
+                                        <img loading="lazy" src="./img/catalog/${product.img}" alt="${product.description}">
                                     </div>
                                     <div class="product-list__content">
                                         <h4>${product.title}</h4>
@@ -290,15 +248,21 @@
             </div>
         </section>
 
-
-
     </main>
 
     <footer class="footer">
 	<div class="container">
 		<div class="footer__wrappper">
-			<img loading="lazy" class="footer-logo" src="./img/logo-day.png" alt="">
-			<p>© 2024. Артекс. Все права защищены</p>
+			<div class="logo">
+				<img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Артекс">
+				<div>
+					<h2>Авангард</h2>
+					<p class="logo-label">
+						Всё начинается с упаковки
+					</p>
+				</div>
+			</div>
+			<p>© 2025. Артекс. Все права защищены</p>
 		</div>
 	</div>
 </footer>
