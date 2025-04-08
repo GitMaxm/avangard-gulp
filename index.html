@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Стартовый шаблон</title>
+	<meta name="description"
+		content="Производство ПНД бутылок, ПЭТ-тары, гофротары, стреч-пленки и скотча в Каменск-Шахтинском. Качественная упаковка от производителя." />
+	<meta name="keywords"
+		content="ПНД бутылки, ПЭТ-тара, гофротара, стреч-пленка, скотч, производство упаковки, упаковка Ростовская область" />
+	<title>Авангард - производство упаковки | ПНД бутылки, ПЭТ-тара, гофротара | Каменск-Шахтинский</title>
+	<link rel="shortcut icon" href="./img/waffle-bg.png" type="image/x-icon">
+
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<!-- Schema.org markup for Google -->
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Авангард",
+      "image": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Профильная, 33",
+        "addressLocality": "Каменск-Шахтинский",
+        "addressRegion": "Ростовская область"
+      },
+      "description": "Производство упаковочных материалов: ПНД бутылки, ПЭТ-тара, гофротара, стреч-пленка, скотч",
+      "url": ""
+    }
+    </script>
 </head>
 
 <body>
@@ -21,10 +44,9 @@
 
     <nav class="header-nav">
     <ul>
+        <li><a href="#catalog">Каталог</a></li>
         <li><a href="#about">О компании</a></li>
-        <li><a href="#catalog">Товары</a></li>
-        <!-- <li><a href="#!">БЛОГ</a></li> -->
-        <li><a href="#contacts">КОНТАКТЫ</a></li>
+        <li><a href="#contacts">Контакты</a></li>
     </ul>
 
     <button class="mobile-nav-btn">
@@ -104,7 +126,7 @@
 
             <div class="header-bot">
     <div class="logo">
-        <img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Артекс">
+        <img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Авангард">
         <div>
             <h2>Авангард</h2>
             <p class="logo-label">
@@ -113,35 +135,13 @@
         </div>
     </div>
 
-    <!-- <form class="header-search">
-
-        <input class="header-search__input" type="text" placeholder="Поиск по товарам">
-
-        <button class="button header-search__btn" disabled="">
-            Найти
-        </button>
-
-    </form> -->
-
-
-
 </div>
 
         </div>
 
-        <div class="header-content">
+        <div class="header-content fade-in-element">
             <div class="swiper header-swiper">
                 <div class="swiper-wrapper header-wrapper">
-
-                    <div class="swiper-slide header-slide"
-                        style="background: url('./img/header/slider-1.jpg') center/cover no-repeat;">
-                        <div class="header-slide__content">
-                            <a href="waffle.html">
-                                <h1>Гофротара</h1>
-                            </a>
-                            <p>Изготавливаем гофроупаковку из трехслойного гофрированного картона</p>
-                        </div>
-                    </div>
 
                     <div class="swiper-slide header-slide"
                         style="background: url('./img/header/slider-2.jpg') center/cover no-repeat;">
@@ -160,6 +160,16 @@
                                 <h1>ПНД-бутылка</h1>
                             </a>
                             <p>Производим ПНД-бутылку</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide header-slide"
+                        style="background: url('./img/header/slider-1.jpg') center/cover no-repeat;">
+                        <div class="header-slide__content">
+                            <a href="waffle.html">
+                                <h1>Гофротара</h1>
+                            </a>
+                            <p>Изготавливаем гофроупаковку из трехслойного гофрированного картона</p>
                         </div>
                     </div>
 
@@ -202,7 +212,7 @@
 </div>
 
 	<main>
-		<section class="advantages">
+		<section class="advantages fade-in-element">
     <div class="container">
         <div class="advantages__wrapper">
             <div class="advantages-block">
@@ -234,32 +244,10 @@
     </div>
 </section>
 
-		<section class="about" id="about">
-    <div class="container">
-        <div class="about-wrapper">
-            <div class="about-content">
-                <h2>О компании Артекс</h2>
-
-                <p>
-                    "Артекс" - ваш надежный партнер в производстве упаковочных материалов. Мы специализируемся на
-                    изготовлении высококачественной гофротары, ПНД-бутылок и ПЭТ-тары. Наша команда профессионалов
-                    создает упаковочные решения, идеально соответствующие потребностям каждого клиента.
-                </p>
-                <p>
-                    Мы гордимся тем, что производим тару по индивидуальным заказам, учитывая все ваши требования к
-                    размерам и характеристикам. Благодаря современному оборудованию и богатому опыту, "Артекс"
-                    гарантирует превосходное качество продукции и полное удовлетворение запросов наших заказчиков.
-                </p>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-		<section class="catalog" id="catalog">
+		<section class="catalog fade-in-element" id="catalog">
     <div class="container">
 
-        <h2>Товары</h2>
+        <h2>Каталог</h2>
 
         <div class="catalog-wrapper">
 
@@ -282,7 +270,29 @@
     </div>
 </section>
 
-		<section class="form-main">
+		<section class="about fade-in-element" id="about">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class="about-content">
+                <h2>О компании Авангард</h2>
+
+                <p>
+                    "Авангард" - ваш надежный партнер в производстве упаковочных материалов. Мы специализируемся на
+                    изготовлении высококачественной гофротары, ПНД-бутылок и ПЭТ-тары. Наша команда профессионалов
+                    создает упаковочные решения, идеально соответствующие потребностям каждого клиента.
+                </p>
+                <p>
+                    Мы гордимся тем, что производим тару по индивидуальным заказам, учитывая все ваши требования к
+                    размерам и характеристикам. Благодаря современному оборудованию и богатому опыту, "Авангард"
+                    гарантирует превосходное качество продукции и полное удовлетворение запросов наших заказчиков.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+		<section class="form-main fade-in-element">
     <div class="container">
         <div class="form-intro">
             <h2 class="form-title">Заказать звонок</h2>
@@ -337,7 +347,7 @@
     </div>
 </section>
 
-		<section class="contacts" id="contacts">
+		<section class="contacts fade-in-element" id="contacts">
     <div class="container">
 
         <h2>Контакты</h2>
@@ -385,15 +395,13 @@
 	<div class="container">
 		<div class="footer__wrappper">
 			<div class="logo">
-				<img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Артекс">
+				<img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Авангард">
 				<div>
 					<h2>Авангард</h2>
-					<p class="logo-label">
-						Всё начинается с упаковки
-					</p>
+
 				</div>
 			</div>
-			<p>© 2025. Артекс. Все права защищены</p>
+			<p>© 2025. Авангард. Все права защищены</p>
 		</div>
 	</div>
 </footer>
