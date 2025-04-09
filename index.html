@@ -216,16 +216,18 @@
     <div class="container">
         <div class="advantages__wrapper">
             <div class="advantages-block">
-                <img loading="lazy" class="advantages-img" src="./img/advantages/01.png" alt="">
-
+                <div class="icon-wrapper">
+                    <img loading="lazy" class="advantages-img" src="./img/advantages/01.png"
+                        alt="Быстрые сроки производства">
+                    <span class="icon-credit">Иконка от Freepik</span>
+                </div>
                 <h3>Быстрые сроки производства</h3>
-                <p>Оперативное изготовление заказов благодаря передовым технологиям и оптимизированным производственным
-                    процессам</p>
-
+                <p>Оперативное изготовление заказов...</p>
             </div>
 
             <div class="advantages-block">
-                <img loading="lazy" class="advantages-img" src="./img/advantages/02.png" alt="">
+                <img loading="lazy" class="advantages-img" src="./img/advantages/02.png" alt="Доставка"
+                    title="Иконка от Freepik">
 
                 <h3>Доставка</h3>
                 <p>Организуем быструю и надежную доставку по всей России</p>
@@ -233,16 +235,40 @@
             </div>
 
             <div class="advantages-block">
-                <img loading="lazy" class="advantages-img" src="./img/advantages/03.png" alt="">
+                <img loading="lazy" class="advantages-img" src="./img/advantages/03.png"
+                    alt="Минимальная партия производства" title="Иконка от Freepik">
 
                 <h3>Минимальная партия производства</h3>
                 <p>Готовы выполнить заказ любого объема, включая небольшие партии, удовлетворяя потребности каждого
                     клиента</p>
 
             </div>
+
         </div>
-    </div>
+
+        <div class="advantages-credits">
+            Использованы иконки от <a href="https://www.freepik.com" target="_blank"
+                rel="noopener noreferrer">Freepik</a>
+        </div>
 </section>
+
+<style>
+    .advantages-credits {
+        text-align: end;
+        font-size: 12px;
+        color: #999;
+        margin-top: 15px;
+
+        a {
+            color: currentColor;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+</style>
 
 		<section class="catalog fade-in-element" id="catalog">
     <div class="container">
@@ -393,15 +419,19 @@
 
 	<footer class="footer">
 	<div class="container">
-		<div class="footer__wrappper">
-			<div class="logo">
+		<div class="footer__wrapper">
+			<div class="footer__logo">
 				<img id="logo" loading="lazy" src="./img/logo.png" alt="Логотип компании Авангард">
-				<div>
-					<h2>Авангард</h2>
-
-				</div>
+				<h2>Авангард</h2>
 			</div>
-			<p>© 2025. Авангард. Все права защищены</p>
+
+			<p class="footer__copyright">
+				© 2025 Авангард. Все права защищены.
+
+				<span class="footer__credits">
+					Иконки от <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>
+				</span>
+			</p>
 		</div>
 	</div>
 </footer>
